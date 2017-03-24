@@ -25,7 +25,12 @@ package Niti.Test11;
 - отправить главную нить в сон на 1 секунду
 */
 public class Main {
-    public static void main(String[] args) {
-
+    static boolean isStopped = false;
+    public static void main(String[] args) throws InterruptedException {
+    Clock clock = new Clock("Khakov", 23, 59, 56);
+    clock.start();
+    Thread.sleep(10000);
+    isStopped = true;
+    Thread.sleep(1000);
     }
 }
