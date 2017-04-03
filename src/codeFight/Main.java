@@ -1,28 +1,28 @@
 package codeFight;
 
-import java.util.stream.BaseStream;
+class Parent {
+    public Parent(String s){
+        print("created");
+    }
 
-/**
- * Created by Ps1X on 17.03.2017.
- */
- class Oke implements Main.A.B {
-     interface C {
-         void stop();
-     }
-     public int goTo() {
-         System.out.println("uekznm");
-         return 5;
-     }
-}
-public class Main{
-    public static void main(String[] args) {
-Oke o = new Oke();
-o.goTo();
-    }
-    interface A {
-        void go();
-        interface B{
-            int goTo();
-        }
+    public static void print(String s){
+        System.out.println("Parent: " + s);
     }
 }
+
+public class Main extends Parent {
+
+    public Main(String s) {
+        super(s);
+    }
+
+    public static void print(String s){
+        System.out.println("Child: " + s);
+    }
+    public static void main(String[] args){
+        Main child = new Main("t");
+        print("created");
+    }
+}
+
+
