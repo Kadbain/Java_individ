@@ -11,5 +11,11 @@ import java.util.HashSet;
 // For sentence = "Man bites dog", the output should bereverseSentence(sentence) = "dog bites Man".
 public class Main {
     public static void main(String args[]) {
+        int f;
+        f = 5;
+        f = ++f + f++ + f;
+
+        System.out.println(f);
+        System.out.println(f);
     }
 }
