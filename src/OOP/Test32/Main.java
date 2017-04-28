@@ -3,6 +3,9 @@ package OOP.Test32;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by Ps1X on 14.02.2017.
@@ -17,11 +20,13 @@ import java.io.InputStreamReader;
 */
 public class Main {
     public static void main(String[] args) throws IOException {
+        int i = 010;
         factorial();
-
     }
 
+
     public static void factorial() throws IOException {
+
         int i1 = 1;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int i = Integer.parseInt(reader.readLine());
