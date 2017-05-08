@@ -2,43 +2,44 @@ package OOP;
 
 /**
  * Created by Ps1X on 04.05.2017.
+ *
+ * [8](List el2) [13](List el4) [17](List el3) [] [] // 16 | 0.75
+ *
+ *  5 3 10 27
  */
 class Main{
 
     public static void main(String...args){
-        System.out.println(C.x);
+        Tail t = new Tail();
 
+        Cat cat1 = new Cat();
+        Cat cat2 = new Cat();
+
+        cat1.setTail(t);
+        cat2.setTail(t);
+
+        System.out.println(t);
     }
 
 }
 
-class B {
-    static{
-        System.out.println("static B1");
-    }
-    {
-        System.out.println("non static B1");
-    }
-    B(){
-        System.out.println("B");
+class Pet {
+
+}
+
+class Tail{
+    void setTail(){
+
     }
 }
-class C extends B{
-    static int x = 5;
-    static{
-        System.out.println("static C1");
-    }
-    {
-        System.out.println("non static C1");
-    }
-    C(){
-        this("Hello");
-        System.out.println("C1");
-    }
-    C(String str){
-        System.out.println("C2");
-    }
-    {
-        System.out.println("non static C2");
+
+class Cat extends Pet{
+//   Tail tail = new Tail();
+     Tail tail;
+
+    public void setTail(Tail tail) {
+       tail.setTail();
     }
 }
+
+
