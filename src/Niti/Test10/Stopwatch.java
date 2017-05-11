@@ -34,14 +34,11 @@ public class Stopwatch extends Thread {
 
     @Override
     public void run() {
-        while (Main.isStopped == false) {
+        while (!Main.isStopped) {
             try {
                 doSeveralSteps();
             } catch (InterruptedException e) {
-
             }
-
         }
-        super.run();
     }
 }
