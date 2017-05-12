@@ -1,5 +1,10 @@
 package Niti.Test26;
 
+import Niti.Test26.common.*;
+import Niti.Test26.common.ImageReader;
+import Niti.Test26.common.ImageTypes;
+import OOP.Test36.*;
+
 /**
  * Created by Ps1X on 11.05.2017.
  */
@@ -19,5 +24,7 @@ package Niti.Test26;
 public class Main {
     public static void main(String[] args) {
 
+        ImageReader imageReader = ImageReaderFactory.imageReader(ImageTypes.BMP);
+        System.out.println(imageReader);
     }
 }

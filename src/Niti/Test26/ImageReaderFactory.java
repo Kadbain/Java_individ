@@ -1,9 +1,7 @@
 package Niti.Test26;
 
 
-import Niti.Test26.common.BmpReader;
-import Niti.Test26.common.ImageReader;
-import Niti.Test26.common.ImageTypes;
+import Niti.Test26.common.*;
 
 /**
  4. Этот метод должен:
@@ -16,7 +14,13 @@ public class ImageReaderFactory {
         if (types == ImageTypes.BMP) {
             imageReader = new BmpReader();
 
-        } else if (types == ImageTypes.BMP)
+        } else if (types == ImageTypes.JPG) {
+            imageReader = new JpgReader();
+        } else if (types == ImageTypes.PNG){
+            imageReader = new PngReader();
+        } else {
+            throw new IllegalArgumentException("Неизвестный тип картинки");
+        }
         return imageReader;
     }
 }
