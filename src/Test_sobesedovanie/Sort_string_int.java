@@ -32,19 +32,23 @@ import java.util.List;
         */
 public class Sort_string_int {
     public static void main(String[] args) throws IOException {
-        List<String > sort_temp = new ArrayList<>();
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    while (true) {
-        String string = reader.readLine();
-        if (!string.isEmpty()) {
-            sort_temp.add(string);
-        } else {
-            break;
+        List<String> sort_temp = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        while (true) {
+            String string = reader.readLine();
+            if (!string.isEmpty()) {
+                sort_temp.add(string);
+            } else {
+                break;
+            }
+        }
+        String[] sort = sort_temp.toArray(new String[sort_temp.size()]);
+        sort(sort);
+        for (String s : sort) {
+            System.out.println(s);
         }
     }
-    String [] sort = sort_temp.toArray(new String [sort_temp.size()]);
 
-    }
     private static boolean isNumber(String s) {
         try {
             Integer.parseInt(s);
@@ -53,26 +57,39 @@ public class Sort_string_int {
         }
         return true;
     }
-    private static boolean isString(String a, String b) {
+
+    private static boolean isGreaterThen(String a, String b) {
         return a.compareTo(b) > 0;
 
     }
-    private static void sort (String [] strings) {
+
+    private static void sort(String[] strings) {
         for (int i = 0; i < strings.length; i++) {
             if (isNumber(strings[i])) {
                 for (int j = 0; j < strings.length - 1; j++) {
-                        if (isNumber(strings[j])) {
-                            int a = Integer.parseInt(strings[i]);
-                            int b = Integer.parseInt(strings[j]);
-                            if (a > b) {
-                                String t = strings[j];
-                                strings[j] = strings[i];
-                                strings[i] = t;
-                            }
+                    if (isNumber(strings[j])) {
+                        int a = Integer.parseInt(strings[i]);
+                        int b = Integer.parseInt(strings[j]);
+                        if (a > b) {
+                            String t = strings[i];
+                            strings[i] = strings[j];
+                            strings[j] = t;
                         }
+                    }
+                }
+            } else {
+                for (int j = 0; j < strings.length - 1; j++) {
+                    if (!isGreaterThen(strings[i], strings[j])) {
+                        String temp = strings[i];
+                        strings[i] = strings[j];
+                        strings[j] = temp;
                     }
                 }
             }
         }
     }
 }
+
+//        for(int j = 0; j < array.length; j++){
+//        if(!isNumber(array[j])){
+//        if(!isGreaterThan(array[i], array[j])){
