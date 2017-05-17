@@ -1,4 +1,4 @@
-package com.javarush.test.level07.lesson12.bonus01;
+package zada4i_list_mas_br;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,7 +18,7 @@ Cat name is Barsik, age is 6, weight is 5, tail = 22
 Cat name is Murka, age is 8, weight is 7, tail = 20
 */
 
-public class Solution
+public class Cats_sout_monitor
 {
     public final static ArrayList<Cat> CATS = new ArrayList<Cat>();
 
