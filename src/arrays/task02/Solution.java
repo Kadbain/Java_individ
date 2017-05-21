@@ -1,4 +1,4 @@
-package com.javarush.test.level07.lesson04.task02;
+package arrays.task02;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -18,7 +18,7 @@ public class Solution
         for(int i = 0; i < array.length; i++)
         {
             array[i] = reader.readLine();
-        }  //напишите тут ваш код
+        }
         for(int i = 9; i >= 0; i--)
         {
             System.out.println(array[i]);
