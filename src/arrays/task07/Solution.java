@@ -1,4 +1,4 @@
-package com.javarush.test.level07.lesson12.home03;
+package arrays.task07;
 
 import java.io.BufferedReader;
 import java.io.IOException;
