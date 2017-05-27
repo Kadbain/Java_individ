@@ -1,4 +1,4 @@
-package Test_sobesedovanie.Test5;
+package all_sorts.Test5;
 
 import java.io.BufferedReader;
 import java.io.IOException;
