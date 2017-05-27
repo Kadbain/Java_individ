@@ -1,4 +1,4 @@
-package Test_sobesedovanie.puzirok;
+package all_sorts.puzirok;
 
 /**
  * Created by Ps1X on 08.05.2017.
