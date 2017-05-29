@@ -1,13 +1,10 @@
-package Test_Files;
+package all_sorts;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.InterruptedIOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  * Created by Ps1x on 22.12.2016.
@@ -33,7 +30,7 @@ import java.util.Scanner;
         0
         Яблоко
         */
-public class Test_03 {
+public class Sorts {
     static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
