@@ -1,9 +1,8 @@
-package repair;
+package all_sorts;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
 
 /**
  * Created by Ps1X on 12.01.2017.
