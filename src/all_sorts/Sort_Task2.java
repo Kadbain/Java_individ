@@ -1,6 +1,4 @@
-package repair;
-
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.CompareGenerator;
+package all_sorts;
 
 import java.io.BufferedReader;
 import java.io.IOException;
