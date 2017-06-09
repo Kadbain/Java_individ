@@ -10,11 +10,11 @@ public class Main {
     }
 
     public Main() {
-        System.out.println("Main cons");
+        System.out.println("Hash_equals cons");
     }
 
     public static void method(){
-        System.out.println("Main");
+        System.out.println("Hash_equals");
     }
 
 }
