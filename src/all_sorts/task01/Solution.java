@@ -1,4 +1,4 @@
-package com.javarush.test.level09.lesson11.bonus03;
+package all_sorts.task01;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
