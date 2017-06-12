@@ -1,4 +1,4 @@
-package com.javarush.test.level07.lesson06.task03;
+package lists.task03;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
