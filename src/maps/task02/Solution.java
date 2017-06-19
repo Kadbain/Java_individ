@@ -1,5 +1,4 @@
-package com.javarush.test.level08.lesson03.task02;
-
+package maps.task02;
 /* HashMap из 4 пар
 Создать коллекцию HashMap<String, String>, занести туда 4 пары строк:
 арбуз - ягода, банан - трава, вишня - ягода, груша - фрукт
