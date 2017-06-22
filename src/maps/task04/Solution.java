@@ -1,4 +1,4 @@
-package com.javarush.test.level08.lesson03.task04;
+package maps.task04;
 
 import com.sun.org.apache.bcel.internal.classfile.StackMapEntry;
 
