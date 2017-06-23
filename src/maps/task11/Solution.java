@@ -1,4 +1,4 @@
-package com.javarush.test.level08.lesson11.bonus02;
+package maps.task11;
 
 import java.io.BufferedReader;
 import java.io.IOException;
