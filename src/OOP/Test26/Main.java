@@ -14,8 +14,8 @@ import java.io.InputStreamReader;
     String EARTH = "earth";
 2. В отдельных файлах создать три синглтон класса Sun, Moon, Earth.
 3. Реализовать интерфейс Planet для классов Sun, Moon, Earth.
-4. В классе Solution создать переменную static Planet thePlanet;
-4. В статическом блоке класса Solution вызвать метод readKeyFromConsoleAndInitPlanet.
+4. В классе Cats_sout_monitor создать переменную static Planet thePlanet;
+4. В статическом блоке класса Cats_sout_monitor вызвать метод readKeyFromConsoleAndInitPlanet.
 5. Реализовать функционал метода readKeyFromConsoleAndInitPlanet:
 5.1. С консоли считать один параметр типа String.
 5.2. Если параметр равен одной из констант интерфейса Planet, то создать соответствующий объект и присвоить его Planet thePlanet, иначе обнулить Planet thePlanet.
