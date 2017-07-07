@@ -1,10 +1,10 @@
-package com.javarush.test.level08.lesson11.home02;
+package sets.home02;
 
 import java.util.HashSet;
 import java.util.Set;
 
 /* Множество всех животных
-1. Внутри класса Solution создать public static классы Cat, Dog.
+1. Внутри класса Cats_sout_monitor создать public static классы Cat, Dog.
 2. Реализовать метод createCats, котороый должен возвращать множество с 4 котами.
 3. Реализовать метод createDogs, котороый должен возвращать множество с 3 собаками.
 4. Реализовать метод join, котороый должен возвращать объединенное множество всех животных - всех котов и собак.
