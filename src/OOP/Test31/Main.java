@@ -16,8 +16,8 @@ import java.io.InputStreamReader;
 3.1 Класс Helicopter должен иметь 1 конструктор с приватным параметром int - количество перевозимых пассажиров.
 3.2 В классе Helicopter метод fly() должен возвращать строку "Helicopter is flying";
 3.3 В классе Helicopter переопределить метод toString(), что бы он возвращал строку: fly() + " with " + getPasenger();
-4. В классе Solution создать статическую переменную Flyable result;
-5. В статическом методе reset класса Solution:
+4. В классе Cats_sout_monitor создать статическую переменную Flyable result;
+5. В статическом методе reset класса Cats_sout_monitor:
 5.1. В бесконечном цикле считывать с консоли параметр типа String. Параметр может быть "plane" или "helicopter".
 5.2. Если параметр равен "helicopter", то считать второй параметр типа int, статическому объекту Flyable result присвоить объект класса Helicopter.
 5.3. Если параметр равен "plane", то считать второй параметр типа int, статическому объекту Flyable result присвоить объект класса Plane.
